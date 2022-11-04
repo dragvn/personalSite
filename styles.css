@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Inconsolata', monospace;
+    background-color: black;
+    color: #ffffffa5;
+    text-shadow:
+    0 0 10px #00ff2a;
+}
+/*****************************
+HEADER
+*****************************/
+header {
+    font-size: 2.5rem;
+}
+nav {
+    height: 10vh;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+.navLinks {
+    margin: 2rem;
+}
+.bully {
+    margin-right: auto;
+    display: flex;
+}
+/******************************
+MAIN
+******************************/
+.hero {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroText {
+    font-size: 6rem;
+    margin: 1rem;
+}
+h1 {
+    margin-bottom: 1rem;
+}
+.icon {
+    width: 3.5rem;
+    background-color: #94eda38d;
+    border-radius: 50%;
+}
