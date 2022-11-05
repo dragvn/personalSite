@@ -5,7 +5,7 @@
 }
 html {
     font-size: 62.5%;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', monospace, sans-serif;
     background-color: black;
     color: #ffffffa5;
     text-shadow:
@@ -45,6 +45,31 @@ MAIN
 .heroText {
     font-size: 6rem;
     margin: 1rem;
+    padding: 2rem;
+    position: relative;
+}
+.heroText::after {
+     content:'|';
+     position: absolute;
+     right: 0;
+     bottom: 1rem;
+     color: #ffffff;
+     background-color: black;
+     width: 100%;
+     padding: 1rem;
+     animation: 
+        typing 3s steps(31) forwards,
+        line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line{
+    50%{
+        color: transparent;
+    }
 }
 h1 {
     margin-bottom: 1rem;
