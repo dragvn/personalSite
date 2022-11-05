@@ -71,16 +71,18 @@ INDEX
             typing 3s steps(31) forwards,
             line 1s infinite;
     }
-    @keyframes typing{
-        to{
-            width: 0%;
+
+        @keyframes typing{
+            to{
+                width: 0%;
+            }
         }
-    }
-    @keyframes line{
-        50%{
-            color: transparent;
+        @keyframes line{
+            50%{
+                color: transparent;
+            }
         }
-    }
+
     h1 {
         margin-bottom: 1rem;
     }
@@ -93,18 +95,32 @@ INDEX
 /***************************
 ABOUT ME
 ***************************/
+#stackMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.stackRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .stackBtn {
     background-color: #ffffff;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20rem;
+    width: 25rem;
     border-radius: 25px;
     padding: .5rem;
     font-size: 3rem;
-    
+    text-shadow: none;
+    margin: 2rem;
 }
 .stackIcon {
     width: 5rem;
+    margin-right: 1rem;
 }
