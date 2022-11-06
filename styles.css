@@ -2,14 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: none;
 }
 html {
     font-size: 62.5%;
-    font-family: 'Inconsolata', monospace, sans-serif;
+    font-family: sans-serif;
+    font-weight: 300;
     background-color: black;
     color: #ffffffa5;
-    text-shadow:
-    0 0 10px #00ff2a;
+    text-shadow:0 0 10px #00ff2a;
  
 }
 a {
@@ -38,9 +39,15 @@ INDEX
     .navLinks {
         margin: 2rem;
     }
+    .navLinks:hover{
+        color: rgba(217, 255, 0, 0.593);
+    }
     .bully {
         margin-right: auto;
         display: flex;
+    }
+    .icon:hover {
+        background-color: rgba(217, 255, 0, 0.593);
     }
     /******************************
     MAIN
@@ -58,7 +65,7 @@ INDEX
         padding: 2rem;
         position: relative;
     }
-    .heroText::after {
+     .heroText::after {
         content:'|';
         position: absolute;
         right: 0;
@@ -69,8 +76,8 @@ INDEX
         padding: 1rem;
         animation: 
             typing 3s steps(31) forwards,
-            line 1s infinite;
-    }
+            line 1s infinite; 
+    } 
 
         @keyframes typing{
             to{
@@ -81,7 +88,7 @@ INDEX
             50%{
                 color: transparent;
             }
-        }
+        } 
 
     h1 {
         margin-bottom: 1rem;
@@ -90,16 +97,17 @@ INDEX
         width: 3.5rem;
         background-color: #94eda38d;
         border-radius: 50%;
-    }
+        padding: .25rem;
+    } 
 
 /***************************
-ABOUT ME
+STACK
 ***************************/
 #stackMain {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 .stackRow {
     display: flex;
@@ -119,8 +127,117 @@ ABOUT ME
     font-size: 3rem;
     text-shadow: none;
     margin: 2rem;
+    box-shadow: 0 0 20px #00ff2a;
 }
 .stackIcon {
     width: 5rem;
     margin-right: 1rem;
+}
+
+/**************************
+ABOUT ME
+**************************/
+#aboutMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    margin: 4rem;
+}
+.aboutImg {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+}
+.textWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    margin: 4rem;
+}
+.aboutText {
+    font-size: 3rem;
+}
+
+/********************
+CONTACT
+*********************/
+.wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 2rem;
+}
+.contactForm {
+    max-width: 55rem;
+    margin: 0 auto;
+    background-color: rgba(34, 194, 58, 0.1);
+    padding: 3rem;
+    border-radius: .5rem;
+    display: flex;
+    box-shadow: 0 0 10px #00ff2a;
+}
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+.inputFields, .message {
+    width: 48%;
+}
+
+.inputFields .input, .message textarea {
+    margin: 1rem 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(217, 255, 0, 0.593);
+    padding: 1rem;
+    color: rgba(85, 255, 0, 0.417);
+    width: 100%;
+}
+.message textarea {
+    height: 21rem;
+}
+.btn {
+    background: #101010c5;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    color:rgba(34, 194, 58);
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(217, 255, 0, 0.593);
+    font-size: 2rem;
+}
+
+.btn:hover {
+    background-color: rgba(217, 255, 0, 0.593);
+    color: black;
+    text-shadow: none;
+}
+
+/************************
+MEDIA QUERIES
+************************/
+
+/**************
+CONTACT FORM
+***************/
+@media screen and (max-width: 600px){
+    .contactForm {
+        flex-direction: column;
+    }
+    .message textarea {
+        height: 8rem;
+    }
+    .inputFields, .message, .btn {
+        width: 100%;
+    }
 }
