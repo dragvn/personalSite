@@ -128,6 +128,7 @@ STACK
     text-shadow: none;
     margin: 2rem;
     box-shadow: 0 0 20px #00ff2a;
+    /* text-transform: uppercase; */
 }
 .stackIcon {
     width: 5rem;
