@@ -29,20 +29,23 @@
             </nav>
         </header>
 
-        <div class="wrapper">
-            <div class="contactForm">
-                <div class="inputFields">
-                    <input type="text" class="input" placeholder="Name">
-                    <input type="text" class="input" placeholder="Email">
-                    <input type="text" class="input" placeholder="Phone">
-                    <input type="text" class="input" placeholder="Subject">
-                </div>
-                <div class="message">
-                    <textarea placeholder="Message"></textarea>
-                    <div class="btn">Submit</div>
+        <for action="mail.php">
+            <div action="main.php" class="wrapper">
+                <div class="contactForm">
+                    <div class="inputFields">
+                        <input type="text" class="input" name="name" placeholder="Name">
+                        <input type="text" class="input" name="email" placeholder="Email">
+                        <input type="text" class="input" name="phone" placeholder="Phone">
+                        <input type="text" class="input" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Message" name="message"></textarea>
+                        <div class="btn">Submit</div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
+
 
 
     </body>
