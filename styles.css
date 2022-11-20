@@ -66,6 +66,13 @@ INDEX
         padding: 2rem;
         position: relative;
     }
+    .underHero h1 {
+        font-size: 2rem;
+        font-weight: 200;
+        width: 45%;
+        margin: auto;
+        text-align: center;
+    }
      .heroText::after {
         content:'|';
         position: absolute;
@@ -228,19 +235,22 @@ CONTACT
 /***********************
 PROJECTS
 *************************/
-.projectsTitle, .projectsTitle + h3 {
+.projectsTitle, .projectsTitle + p {
     text-align: center;
+}
+.projectsTitle {
+    font-size: 4rem;
+    
 }
 .thumbnailContainer {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
 }
 .thumbnail {
-    max-width: 50%;
-    flex: 1;
-    background-color: black;
+    width: 90%;
+    margin: 3rem;
+    background-color: gray;
     border-radius: 15px;
 }
 
