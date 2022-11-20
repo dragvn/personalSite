@@ -49,12 +49,13 @@ INDEX
     .icon:hover {
         background-color: rgba(217, 255, 0, 0.593);
     }
+
     /******************************
     MAIN
     ******************************/
     .hero {
         display: flex;
-        height: 90vh;
+        height: 70vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -222,6 +223,25 @@ CONTACT
     background-color: rgba(217, 255, 0, 0.593);
     color: black;
     text-shadow: none;
+}
+
+/***********************
+PROJECTS
+*************************/
+.projectsTitle, .projectsTitle + h3 {
+    text-align: center;
+}
+.thumbnailContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+}
+.thumbnail {
+    max-width: 50%;
+    flex: 1;
+    background-color: black;
+    border-radius: 15px;
 }
 
 /************************
