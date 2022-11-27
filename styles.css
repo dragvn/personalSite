@@ -245,15 +245,26 @@ PROJECTS
 .thumbnailContainer {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding: 2rem;
 }
 .thumbnail {
-    width: 90%;
+    width: 35rem;
     margin: 3rem;
     background-color: gray;
     border-radius: 15px;
 }
-
+.thumbnail:hover {
+    box-shadow: 0 0 15px rgba(217, 255, 0, 0.8);
+}
+.projectThumbnailAnchor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectThumbnailAnchor span {
+    font-size: 2rem;
+}
 /************************
 MEDIA QUERIES
 ************************/
