@@ -250,6 +250,7 @@ PROJECTS
 }
 .thumbnail {
     width: 35rem;
+    height: 55rem;
     margin: 3rem;
     background-color: gray;
     border-radius: 15px;
