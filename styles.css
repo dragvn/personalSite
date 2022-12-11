@@ -33,6 +33,7 @@ INDEX
         justify-content: space-between;
         align-items: center;
         background-color: black;
+        margin-bottom: 4rem;
        
     }
     ul {
@@ -202,12 +203,14 @@ ABOUT ME
 /********************
 CONTACT
 *********************/
+
 .wrapper {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
     padding: 2rem;
+    margin-top: 4rem;
 }
 .contactForm {
     max-width: 55rem;
