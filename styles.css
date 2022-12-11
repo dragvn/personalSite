@@ -143,6 +143,7 @@ STACK
     justify-content: center;
     align-items: center;
     padding: 5rem;
+    padding-top: 1rem;
 }
 .stackRow {
     display: flex;
@@ -178,6 +179,7 @@ ABOUT ME
     justify-content: center;
     align-items: center;
     padding: 5rem;
+    padding-top: 1rem;
 }
 .aboutContainer {
     display: flex;
