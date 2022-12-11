@@ -81,7 +81,7 @@ INDEX
         display: flex;
         height: 70vh;
         flex-direction: column;
-        justify-content: center;
+        padding-top: 18rem;
         align-items: center;
     }
     .heroText {
@@ -348,6 +348,9 @@ NAV
         padding-top: 1rem;
     }
     #aboutMain{
+        padding-top: 1rem;
+    }
+    .hero{
         padding-top: 1rem;
     }
 }
