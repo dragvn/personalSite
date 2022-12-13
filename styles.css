@@ -247,6 +247,10 @@ CONTACT
 .message textarea {
     height: 21rem;
 }
+.message{
+    display: flex;
+    flex-direction: column;
+}
 .btn {
     background: #101010c5;
     text-align: center;
