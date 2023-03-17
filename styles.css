@@ -170,7 +170,7 @@ STACK
     width: 5rem;
     margin-right: 1rem;
 }
-.react, .sql, .azure, .nodejs{
+.sql, .azure{
     display: none;
 }
 
